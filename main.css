@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 200%;
+  font-weight: 400;
+  padding: .5em;
+  line-height: 1.25;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bookmarklet {
+  float: left;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  transition: box-shadow .1s ease-in, -webkit-transform .1s ease-out;
+  transition: box-shadow .1s ease-in, transform .1s ease-out;
+  padding: .25em .5em .25em .5em;
+  white-space: nowrap;
+}
+
+.bookmarklet:hover {
+  -webkit-transform: rotate(-2deg);
+  -ms-transform:     rotate(-2deg);
+  transform:         rotate(-2deg);
+  cursor: move;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+}

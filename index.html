@@ -12,47 +12,55 @@
 
 		<ul>
 			<li>
-				<a class="bookmarklet" href="javascript: (function () { var jsFile = document.createElement( 'script' ); jsFile.setAttribute( 'src',
-						'http://sambaldwin.github.io/bookmarklets/js/flipHorizontal.js'
-					); document.body.appendChild( jsFile ); }() );">
+				<a
+					class="bookmarklet"
+					href="javascript: document.body.style.transform = 'scaleX(-1)';"
+				>
 					<span class="icon">&harr;</span>
 					Flip horizontal
 				</a>
 			</li>
 			<li>
-				<a class="bookmarklet" href="javascript: (function () { var jsFile = document.createElement( 'script' ); jsFile.setAttribute( 'src',
-						'http://sambaldwin.github.io/bookmarklets/js/flipVertical.js'
-					); document.body.appendChild( jsFile ); }() );">
+				<a
+					class="bookmarklet"
+					href="javascript: document.body.style.minHeight = '100vh';document.body.style.transform = 'scaleY(-1)';"
+				>
 					<span class="icon">&varr;</span>
 					Flip vertical
 				</a>
 			</li>
 			<li>
-				<a class="bookmarklet" href="javascript: (function () { var jsFile = document.createElement( 'script' ); jsFile.setAttribute( 'src',
-						'http://sambaldwin.github.io/bookmarklets/js/rotate180.js'
-					); document.body.appendChild( jsFile ); }() );">
+				<a
+					class="bookmarklet"
+					href="javascript: document.body.style.minHeight = '100vh';document.body.style.transform = 'rotate(180deg)';"
+				>
 					<span class="icon">&#8634;</span>
 					Rotate 180&deg;
 				</a>
 			</li>
 			<li>
-				<a class="bookmarklet" href="javascript: (function () { var jsFile = document.createElement( 'script' ); jsFile.setAttribute( 'src',
-						'http://sambaldwin.github.io/bookmarklets/js/contenteditable.js'
-					); document.body.appendChild( jsFile ); }() );">
+				<a
+					class="bookmarklet"
+					href="javascript: document.designMode = 'on'; document.body.setAttribute( 'spellcheck', 'false' );"
+				>
 					<span class="icon">&#63490;</span>
 					Content editable
 				</a>
 			</li>
 			<li>
-				<a class="bookmarklet" href="javascript: (function () { var jsFile = document.createElement( 'script' ); jsFile.setAttribute( 'src',
-						'http://sambaldwin.github.io/bookmarklets/js/desaturate.js'
-					); document.body.appendChild( jsFile ); }() );">
+				<a
+					class="bookmarklet"
+					href="javascript: document.body.style.filter = 'grayscale(1)';"
+				>
 					<span class="icon">&#9681;</span>
 					Desaturate
 				</a>
 			</li>
 			<li>
-				<a class="bookmarklet" href="javascript: (function () { location.href = 'https://www.google.com/?gws_rd=ssl#q=site:' + encodeURIComponent(location.href) + '&tbm=isch' ;})();">
+				<a
+					class="bookmarklet"
+					href="javascript: (function () { location.href = 'https://www.google.com/?gws_rd=ssl#q=site:' + encodeURIComponent(location.href) + '&tbm=isch' ;})();"
+				>
 					<span class="icon">&#128269;</span>
 					Google Image Search
 				</a>

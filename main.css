@@ -5,11 +5,18 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 200%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
   font-weight: 400;
   padding: .5em;
   line-height: 1.25;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #fff;
+  }
 }
 
 a {
@@ -18,30 +25,37 @@ a {
 }
 
 ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
   list-style: none;
 }
 
+ul > li {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
 .bookmarklet {
-  float: left;
-  margin-right: .5em;
-  margin-bottom: .5em;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
+  display: block;
   transform: rotate(0);
-  transition: box-shadow .1s ease-in, -webkit-transform .1s ease-out;
-  transition: box-shadow .1s ease-in, transform .1s ease-out;
-  padding: .25em .5em .25em .5em;
+  transition: transform .1s ease-out;
   white-space: nowrap;
 }
 
+.bookmarklet:focus,
 .bookmarklet:hover {
-  -webkit-transform: rotate(-2deg);
-  -ms-transform:     rotate(-2deg);
-  transform:         rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+.bookmarklet:active {
   cursor: move;
 }
 
 .icon {
   display: inline-block;
-  width: 1em;
+  width: 1.25em;
+  position: relative;
+  top: 0.075em;
 }

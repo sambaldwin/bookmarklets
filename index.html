@@ -13,7 +13,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: document.body.style.transform = 'scaleX(-1)';"
+          href="javascript: (function () { document.body.style.transform = 'scaleX(-1)'; })();"
         >
           <span class="icon">↔️</span>
           Flip horizontal
@@ -22,7 +22,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: document.body.style.minHeight = '100vh';document.body.style.transform = 'scaleY(-1)';"
+          href="javascript:(function () { document.body.style.minHeight = '100vh';document.body.style.transform = 'scaleY(-1)'; })();"
         >
           <span class="icon">↕️</span>
           Flip vertical
@@ -31,7 +31,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: document.body.style.minHeight = '100vh';document.body.style.transform = 'rotate(180deg)';"
+          href="javascript: (function () { document.body.style.minHeight = '100vh';document.body.style.transform = 'rotate(180deg)'; })();"
         >
           <span class="icon">🙃</span>
           Rotate 180&deg;
@@ -40,7 +40,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: document.designMode = 'on'; document.body.setAttribute( 'spellcheck', 'false' );"
+          href="javascript: (function () { document.designMode = 'on'; document.body.setAttribute( 'spellcheck', 'false' ); })();"
         >
           <span class="icon">📝</span>
           Content editable
@@ -49,7 +49,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: document.body.style.filter = 'grayscale(1)';"
+          href="javascript: (function () { document.body.style.filter = 'grayscale(1)'; })();"
         >
           <span class="icon">🐼</span>
           Desaturate
@@ -67,7 +67,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: var r = Math.random().toString(36).substr(2, 8); document.activeElement.value = r;"
+          href="javascript: (function () { var r = Math.random().toString(36).substr(2, 8); document.activeElement.value = r; })();"
         >
           <span class="icon">🔡</span>
           Enter random string (8 chars)</a
@@ -76,7 +76,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: document.querySelectorAll('*').forEach(function(e){e.style.outline = '1px solid'});"
+          href="javascript: (function () { document.querySelectorAll('*').forEach(function(e){e.style.outline = '1px solid'}); })();"
         >
           <span class="icon">🔬</span>
           Outline elements</a
@@ -85,7 +85,7 @@
       <li>
         <a
           class="bookmarklet"
-          href="javascript: document.body.style.filter = 'blur(5px)';"
+          href="javascript: (function () { document.body.style.filter = 'blur(5px)'; })();"
         >
           <span class="icon">🌫</span>
           Blur
